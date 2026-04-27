@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5C8A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="noteGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E0E0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bgGradient)" rx="180"/>
+  
+  <!-- Thai Pattern Overlay (subtle) -->
+  <g opacity="0.1">
+    <circle cx="200" cy="200" r="100" fill="white"/>
+    <circle cx="824" cy="200" r="100" fill="white"/>
+    <circle cx="200" cy="824" r="100" fill="white"/>
+    <circle cx="824" cy="824" r="100" fill="white"/>
+  </g>
+  
+  <!-- Musical Note -->
+  <g transform="translate(512, 512)">
+    <!-- Note head -->
+    <ellipse cx="-80" cy="120" rx="90" ry="70" fill="url(#noteGradient)" transform="rotate(-20 -80 120)"/>
+    
+    <!-- Note stem -->
+    <rect x="-10" y="-200" width="40" height="320" fill="url(#noteGradient)" rx="20"/>
+    
+    <!-- Note flag -->
+    <path d="M 30 -200 Q 150 -150 150 -50 Q 150 0 100 20 L 30 -20 Z" fill="url(#noteGradient)"/>
+    <path d="M 30 -140 Q 130 -100 130 -20 Q 130 20 90 35 L 30 0 Z" fill="url(#noteGradient)"/>
+  </g>
+  
+  <!-- Sound waves (decorative) -->
+  <g opacity="0.3" stroke="white" stroke-width="8" fill="none">
+    <path d="M 150 512 Q 200 400 250 512 Q 300 624 350 512"/>
+    <path d="M 674 512 Q 724 400 774 512 Q 824 624 874 512"/>
+  </g>
+</svg>

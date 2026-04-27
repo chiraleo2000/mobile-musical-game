@@ -6,16 +6,30 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^3.0.2",
+    "@react-three/fiber": "^9.6.0",
     "expo": "~54.0.33",
+    "expo-av": "^16.0.8",
+    "expo-gl": "^55.0.13",
     "expo-status-bar": "~3.0.9",
     "react": "19.1.0",
-    "react-native": "0.81.5"
+    "react-native": "0.81.5",
+    "three": "^0.184.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/react": "~19.1.0",
+    "@types/three": "^0.184.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
     "typescript": "~5.9.2"
   },
   "private": true

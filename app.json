@@ -1,30 +1,53 @@
 {
   "expo": {
-    "name": "mobile-musical-game",
+    "name": "Musical Instruments",
     "slug": "mobile-musical-game",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#4A90E2"
     },
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.yourcompany.musicalinstruments",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses audio features for musical instrument playback.",
+        "UIBackgroundModes": ["audio"]
+      }
     },
     "android": {
+      "package": "com.yourcompany.musicalinstruments",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#4A90E2"
       },
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS"
+      ],
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
     }
   }
 }

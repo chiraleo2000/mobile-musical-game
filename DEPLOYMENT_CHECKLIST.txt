@@ -1,0 +1,76 @@
+# Deployment Checklist
+
+## Before Building
+
+### Assets
+[ ] App icon (1024x1024) created
+[ ] Adaptive icon (1024x1024) created
+[ ] Splash screen (1284x2778) created
+[ ] At least 2 screenshots captured
+[ ] At least 5 3D models added
+[ ] At least 20 audio samples added
+[ ] instruments.json updated
+
+### Configuration
+[ ] Bundle identifiers updated in app.json
+[ ] Company name updated in app.json
+[ ] Version numbers set
+[ ] Privacy policy URL added
+[ ] Support email set
+
+### Accounts
+[ ] Expo account created
+[ ] Google Play Console account ($25)
+[ ] Apple Developer account ($99/year)
+
+## Building
+
+[ ] EAS CLI installed: npm install -g eas-cli
+[ ] Logged in: eas login
+[ ] Project configured: eas build:configure
+[ ] Android build: eas build --platform android --profile production
+[ ] iOS build: eas build --platform ios --profile production
+
+## Store Submission
+
+### Google Play
+[ ] App created in Play Console
+[ ] Store listing completed
+[ ] Screenshots uploaded
+[ ] Content rating completed
+[ ] Pricing set (Free)
+[ ] Countries selected
+[ ] AAB file uploaded
+[ ] Submitted for review
+
+### Apple App Store
+[ ] App created in App Store Connect
+[ ] App information completed
+[ ] Screenshots uploaded (all sizes)
+[ ] Description written
+[ ] Keywords added
+[ ] Privacy policy URL added
+[ ] IPA file uploaded
+[ ] Submitted for review
+
+## Post-Submission
+
+[ ] Monitor review status
+[ ] Respond to any rejection feedback
+[ ] Prepare marketing materials
+[ ] Plan launch announcement
+[ ] Set up analytics
+[ ] Prepare support channels
+
+## After Approval
+
+[ ] Announce launch on social media
+[ ] Monitor crash reports
+[ ] Respond to user reviews
+[ ] Plan first update
+[ ] Gather user feedback
+
+---
+
+Current Status: Assets need to be created
+Next Step: Follow ASSET_CREATION_GUIDE.md
